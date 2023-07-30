@@ -29,5 +29,7 @@ pipeline {
       steps {
         echo "To check"
         sh 'sleep 5'
+        }
+    }
   }  
 }  
