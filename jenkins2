@@ -20,6 +20,12 @@ pipeline {
         echo "This is DEPLOY Stage"
         sh 'sleep 5'
       }
+    }
+    stage ('Try') {
+      steps {
+        echo "Trying this Stage"
+        sh 'sleep 5'
+      }
     } 
   }  
 }  
