@@ -19,5 +19,11 @@ pipeline {
         sh 'sleep 5'
       }
     }
+    stage ('CHECK') {
+      steps {
+        echo "This is CHECK Stage"
+        sh 'sleep 5'
+      }
+    }
   }  
 }  
