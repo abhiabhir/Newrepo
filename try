@@ -9,6 +9,14 @@ pipeline {
       echo "to check"
       }
     }
+    stage ('DEPLOY') {
+      agent {
+        label 'node3'
+      }
+      steps {
+      echo "to check"
+      }
+    }
     stage ('TEST') {
       agent {
         label 'node3'
