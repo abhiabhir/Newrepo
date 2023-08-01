@@ -1,0 +1,21 @@
+pipeline {
+  agent any;
+  stages {
+    stage ('BUILD') {
+      parallel {
+      stage ('Testing') {
+        steps {
+          echo "This is testing"
+          sh 'sleep 5'
+        }
+      }
+      stage ('Deploy') {
+        steps {
+          echo "This is Deploy"
+          sh 'sleep 5'
+        }
+      }
+      }
+    }
+  }
+}
