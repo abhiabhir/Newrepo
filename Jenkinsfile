@@ -19,17 +19,5 @@ pipeline {
         sh 'sleep 5'
       }
     }
-    stage ('CHECK') {
-      steps {
-        echo "This is CHECK Stage"
-        sh 'sleep 5'
-      }
-    }
-     stage ('slave2') {
-      steps {
-        echo "To check"
-        sh 'sleep 5'
-        }
-    }
   }  
 }  
