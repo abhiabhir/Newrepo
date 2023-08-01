@@ -1,0 +1,21 @@
+pipeline {
+  agent none
+  stages {
+    stage ('BUILD') {
+      agent {
+        label 'node3'
+      }
+      steps {
+      echo "to check"
+      }
+    }
+    stage ('TEST') {
+      agent {
+        label 'node3'
+      }
+      steps {
+      echo "to check"
+      }
+    }
+  }  
+}
